@@ -52,3 +52,23 @@ footer{background:var(--teal-900);color:#c4d6d1;padding:55px 0 30px;font-size:.7
  .phone small{font-size:.82rem}
  .care-card span,.benefit-categories a{font-size:.9rem}
 }
+
+/* === Legibilidade idoso v2: aumenta a base no mobile === */
+@media(max-width:900px){
+ html{font-size:19px}
+ body{line-height:1.75}
+ .lead,.benefit-panel>p,.hero p{font-size:1.15rem}
+ .plan li{font-size:1.1rem}
+ .partner h4{font-size:1.12rem}
+ .partner .tags,.partner .city{font-size:1rem}
+ .chip{font-size:1.04rem;padding:.7rem 1.1rem}
+ .unit p,.wa,.nav .btn,.appbox .btn,.btn,.search input,.search select{font-size:1.04rem}
+ .trust span{font-size:1rem}
+ .count,.plan .note{font-size:1.02rem}
+ .footer-bottom,.proposal{font-size:.95rem}
+ .tabbar a{font-size:.85rem}
+}
+@media(max-width:640px){ html{font-size:19px} }
+
+/* Mobile: só o menu hambúrguer no cabeçalho (evita botão grande colidindo) */
+@media(max-width:900px){ .nav .actions .btn{display:none} .nav .actions{gap:0} }

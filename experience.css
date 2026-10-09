@@ -27,3 +27,15 @@
  .partner h3{font-size:1.02rem}
  .partner-detail{font-size:.92rem}
 }
+
+/* === Legibilidade idoso v2: diálogos no mobile === */
+@media(max-width:900px){
+ .unit-details p,.coverage ul,.coverage ol,.coverage p,.contact-unit p{font-size:1.08rem}
+ .unit-details h4,.contact-unit h4{font-size:1.1rem}
+ .specialty-tags span{font-size:1rem}
+ .contact-links .btn,.contact-unit .btn,.text-button{font-size:1.06rem}
+ .dialog-action p,.emergency-box p,.legal-note p,.install-heading p,.success-view p,.menu-intro p{font-size:1.08rem}
+ .menu-item strong{font-size:1.12rem}
+ .menu-item small{font-size:.98rem}
+ .form-field,.form-hint,.official-note,.context-note,.demo-notice,.check-field,.coverage summary,.company-heading p{font-size:1.04rem}
+}

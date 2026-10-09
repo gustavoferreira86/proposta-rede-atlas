@@ -72,3 +72,29 @@ footer{background:var(--teal-900);color:#c4d6d1;padding:55px 0 30px;font-size:.7
 
 /* Mobile: só o menu hambúrguer no cabeçalho (evita botão grande colidindo) */
 @media(max-width:900px){ .nav .actions .btn{display:none} .nav .actions{gap:0} }
+
+/* === Rede de Vantagens: grade de categorias estilo app === */
+#filters.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:12px;margin:20px 0 20px}
+.cat-tile{display:flex;flex-direction:column;align-items:center;gap:9px;padding:16px 8px 13px;border:1px solid var(--line);border-radius:18px;background:#fff;cursor:pointer;font-family:inherit;transition:transform .16s,box-shadow .16s,border-color .16s}
+.cat-tile:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--c)}
+.cat-tile.on{background:var(--c);border-color:var(--c)}
+.cat-ic{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;background:var(--teal-50);color:var(--c)}
+.cat-ic{background:color-mix(in srgb,var(--c) 13%,#fff)}
+.cat-ic svg{width:26px;height:26px}
+.cat-tile.on .cat-ic{background:#ffffff26;color:#fff}
+.cat-label{font-size:.9rem;font-weight:700;color:var(--ink);text-align:center;line-height:1.15}
+.cat-tile.on .cat-label{color:#fff}
+.cat-count{font-size:.78rem;font-weight:600;color:var(--muted)}
+.cat-tile.on .cat-count{color:#ffffffd0}
+/* busca com ícone */
+.search input[type=search]{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23586e6e' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E") no-repeat 16px center;padding-left:46px}
+
+/* Mobile: rótulos e ícones das categorias confortáveis para idosos */
+@media(max-width:900px){
+ #filters.filters{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+ .cat-tile{min-width:0;padding:14px 4px 11px}
+ .cat-label{font-size:.88rem}
+ .cat-ic{width:52px;height:52px}
+ .cat-ic svg{width:27px;height:27px}
+}
+@media(max-width:360px){ #filters.filters{grid-template-columns:repeat(2,minmax(0,1fr))} }

@@ -32,3 +32,23 @@ footer{background:var(--teal-900);color:#c4d6d1;padding:55px 0 30px;font-size:.7
 @media(max-width:900px){.wrap{width:calc(100% - 40px)}.nav{height:74px}.nav img{width:130px}.nav ul{display:none}.menu-toggle{display:grid;place-items:center;width:42px;height:42px;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--ink)}.nav ul.open{display:flex;position:absolute;top:74px;left:0;right:0;background:var(--cream-2);padding:20px;flex-direction:column;border-bottom:1px solid var(--line);gap:0;box-shadow:0 15px 20px #123e4310}.nav ul.open a{display:block;padding:12px}.hero h1{font-size:3.25rem}.hero-layout{gap:28px}.film{aspect-ratio:.78;border-top-left-radius:80px}.care-card{left:-10px;padding:14px}.split{grid-template-columns:1fr}.benefit-panel{max-width:600px;width:100%;margin:auto}.contact{grid-template-columns:1fr 1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.appbox{padding:36px}.tabbar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fffffff5;backdrop-filter:blur(15px);border-top:1px solid var(--line);padding:8px 4px calc(8px + env(safe-area-inset-bottom))}.tabbar a{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:.63rem;font-weight:600;color:var(--muted);padding:4px}.tabbar svg{width:20px;height:20px;color:var(--teal)}footer{padding-bottom:110px}section{padding:72px 0}}
 @media(max-width:640px){.wrap{width:calc(100% - 36px)}.proposal{font-size:.61rem;padding:7px 12px}.nav{gap:12px}.nav .actions{gap:8px}.nav .btn{font-size:.72rem;padding:10px 12px}.nav img{width:115px}.hero{padding:30px 0}.hero-layout{grid-template-columns:1fr;gap:28px}.hero .content{padding:0}.hero h1{font-size:clamp(2.8rem,12vw,4rem);max-width:13ch;margin-block:22px}.hero p{font-size:.9rem}.hero .cta{gap:8px;margin-top:23px}.hero .btn{font-size:.78rem;padding:13px 15px}.hero-note{margin-top:20px;font-size:.7rem}.hero-visual{padding-bottom:28px}.film{aspect-ratio:1.25;border-radius:65px 18px 18px 18px}.film-label{bottom:78px;font-size:1rem;left:22px}.film-label small{font-size:.66rem}.video-toggle{bottom:44px}.care-card{left:14px;bottom:0;padding:12px 17px}.care-card .care-icon{height:35px;width:35px}.trust .row{grid-template-columns:1fr 1fr;gap:24px;padding:26px 0}.trust .row>div{padding-left:15px}.trust .row>div:nth-child(3){border:0;padding-left:0}.trust strong{font-size:1.4rem}.trust span{font-size:.68rem}section{padding:60px 0}h2.title{font-size:2rem}.features{gap:25px 18px}.benefit-panel{padding:26px 20px}.benefit-categories{gap:8px}.benefit-categories a{font-size:.65rem;padding:16px 5px}.benefit-categories img{width:38px;height:38px}.plans{grid-template-columns:1fr;gap:18px}.plan{padding:26px}.plan .badge{top:24px;right:22px}.search{flex-direction:column}.search select{flex:auto}.filters{justify-content:flex-start;gap:7px;margin-top:17px}.chip{font-size:.68rem;padding:8px 11px}.grid{gap:10px}.partner .thumb{height:125px}.partner .thumb img{padding:35px 12px 13px}.partner .body{padding:13px}.partner h4{font-size:.73rem}.partner .tags,.partner .city{font-size:.64rem}.partner .pill{font-size:.55rem;left:7px}.contact{grid-template-columns:1fr}.card24{padding:28px}.unit{padding:20px 0}.unit:first-child{padding-top:10px}.appbox{grid-template-columns:1fr;padding:30px 24px;gap:40px}.phone{width:180px;margin-bottom:15px}.appbox .btns{gap:9px}.appbox .btn{font-size:.74rem;padding:11px 13px}footer .cols{grid-template-columns:1fr 1fr;gap:28px}footer .cols>div:first-child{grid-column:1/-1}.footer-bottom{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* === Legibilidade para público idoso — reforço no mobile === */
+@media(max-width:900px){
+ body{line-height:1.72}
+ .lead,.benefit-panel>p{font-size:1.12rem}
+ .partner h4{font-size:1.06rem;line-height:1.38}
+ .partner .tags,.partner .city{font-size:.95rem}
+ .partner .pill{font-size:.85rem}
+ .chip{font-size:.98rem;padding:.65rem 1.05rem}
+ .plan .note,.plan-disclaimer{font-size:.92rem}
+ .plan li{font-size:1.04rem}
+ .plan h3{font-size:1.5rem}
+ .unit p,.wa,.appbox .btn,.nav .btn{font-size:.98rem}
+ .count{font-size:.98rem}
+ .trust span{font-size:.92rem}
+ .tabbar a{font-size:.82rem}
+ .footer-bottom{font-size:.88rem}
+ .phone small{font-size:.82rem}
+ .care-card span,.benefit-categories a{font-size:.9rem}
+}

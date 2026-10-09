@@ -2,12 +2,12 @@
 /* ---------- Planos ---------- */
 const PLANS = {
   0: [
-    {name:'Silver', price:'105,90', items:['Serviço funerário completo','Translado 100 km','Velório online','Rede de Vantagens Atlas']},
     {name:'Platinum', price:'135,00', featured:true, items:['Serviço funerário completo','Cremação no Crematório Atlas','Translado 400 km','Velório online','Rede de Vantagens Atlas']},
+    {name:'Silver', price:'105,90', items:['Serviço funerário completo','Translado 100 km','Velório online','Rede de Vantagens Atlas']},
   ],
   1: [
-    {name:'Silver + Pet', price:'140,90', items:['Serviço funerário completo','Dois pets com cremação','Translado 100 km','Velório online','Rede de Vantagens Atlas']},
     {name:'Platinum + Pet', price:'170,00', featured:true, items:['Serviço funerário completo','Cremação no Crematório Atlas','Dois pets com cremação','Translado 400 km','Velório online','Rede de Vantagens Atlas']},
+    {name:'Silver + Pet', price:'140,90', items:['Serviço funerário completo','Dois pets com cremação','Translado 100 km','Velório online','Rede de Vantagens Atlas']},
   ]
 };
 const check = '<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>';
@@ -26,7 +26,7 @@ document.querySelectorAll('.toggle button').forEach(b => b.onclick = () => {
   document.querySelectorAll('.toggle button').forEach(x=>{x.classList.remove('on');x.setAttribute('aria-pressed','false')});
   b.classList.add('on'); b.setAttribute('aria-pressed','true'); renderPlans(b.dataset.pet);
 });
-renderPlans(0);
+renderPlans(1);
 
 /* ---------- Rede de vantagens ---------- */
 const CATS = {todos:'Todos',hospital:'Hospitais',clinica:'Clínicas e médicos',lab:'Laboratórios',odonto:'Odontologia',farmacia:'Farmácias',lazer:'Lazer e hospedagem'};
